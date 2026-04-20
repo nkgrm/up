@@ -1,4 +1,3 @@
-
 global_defs {
     router_id RTR-1
     vrrp_skip_check_adv_addr
@@ -39,7 +38,7 @@ vrrp_instance VI_20 {
     virtual_router_id 20
     priority 100
     advert_int 1
-    preеmpt yes
+    preempt yes
     authentication {
         auth_type PASS
         auth_pass vlan20_secret
@@ -61,7 +60,7 @@ vrrp_instance VI_30 {
     preempt yes
     authentication {
         auth_type PASS
-        auth_pass vlan30_seсret
+        auth_pass vlan30_secret
     }
     virtual_ipaddress {
         <vip.30> dev ens20.30
