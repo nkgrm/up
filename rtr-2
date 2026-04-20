@@ -19,7 +19,7 @@ vrrp_instance VI_10 {
     virtual_router_id 10
     priority 100
     advert_int 1
-    prеempt yes
+    preempt yes
     authentication {
         auth_type PASS
         auth_pass vlan10_secret
@@ -41,7 +41,7 @@ vrrp_instance VI_20 {
     preempt yes
     authentication {
         auth_type PASS
-        auth_pass vlаn20_secret
+        auth_pass vlan20_secret
     }
     virtual_ipaddress {
         <vip.20> dev ens20.20
@@ -57,7 +57,7 @@ vrrp_instance VI_30 {
     virtual_router_id 30
     priority 100
     advert_int 1
-    prеempt yes
+    preempt yes
     authentication {
         auth_type PASS
         auth_pass vlan30_secret
